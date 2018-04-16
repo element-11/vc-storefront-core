@@ -205,8 +205,6 @@ namespace VirtoCommerce.Storefront.Model
         public CustomerOrder CurrentOrder { get; set; }
 
 
-        public ContactForm ContactUsForm { get; set; }
-
         public StorefrontNotification StorefrontNotification { get; set; }
 
         /// <summary>
@@ -229,6 +227,8 @@ namespace VirtoCommerce.Storefront.Model
         /// </summary>
         public IDictionary<string, object> ApplicationSettings { get; set; }
 
+        //Represent the form data sent and processed on the server side and used for render result view and display errors
+        public object Form { get; set; }
         /// <summary>
         /// Represents user registration data required to bind entered user data in the register form
         /// </summary>
