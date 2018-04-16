@@ -216,7 +216,7 @@ namespace VirtoCommerce.Storefront.Routing
             routes.MapStorefrontRoute("StaticContent.BlogByName.RssFeed", "blogs/{blogname}/{rss}", defaults: new { controller = "StaticContent", action = "BlogRssFeed" }, constraints: new { rss = @"(rss|feed)" });
             routes.MapStorefrontRoute("StaticContent.Blog.RssFeed", "blog/{rss}", defaults: new { controller = "StaticContent", action = "BlogRssFeed" }, constraints: new { rss = @"(rss|feed)" });
 
-            routes.MapStorefrontRoute("Fulfillment.GetFulfillment", "fulfillment/{fulfillmentId}", defaults: new { controller = "Vendor", action = "FulfillmentDetails" });
+            routes.MapStorefrontRoute("Fulfillment.GetFulfillment", "fulfillment/{fulfillmentId}", defaults: new { controller = "Fulfillment", action = "FulfillmentDetails" });
 
             //Register  slug route based on dynamic data
             //It a default route and must be always on end of routes

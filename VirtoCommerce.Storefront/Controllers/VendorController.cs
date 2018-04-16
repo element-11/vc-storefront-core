@@ -57,31 +57,5 @@ namespace VirtoCommerce.Storefront.Controllers
 
             return NotFound();
         }
-
-        [HttpGet]
-        public async Task<ActionResult> FulfillmentDetails(string fulfillmentId)
-        {
-            var result = new VirtoCommerce.Storefront.Model.Inventory.FulfillmentCenter
-            {
-                Name = "Branch",
-                Address = new Address
-                {
-                    Name = "Name",
-                    Organization = "Org",
-                    Zip = "77777",
-                    PostalCode = "8888888",
-                    City = "New York",
-                    CountryCode = "USA",
-                    CountryName = "USA",
-                    Phone = "1-800-777-7777",
-                    Line1 = "123 Street",
-                    RegionId = "NY",
-                    RegionName = "NY"
-                }
-            };
-            WorkContext.FulfillmentCenter = result;
-
-            return View("fulfillment-center", WorkContext);
-        }
     }
 }

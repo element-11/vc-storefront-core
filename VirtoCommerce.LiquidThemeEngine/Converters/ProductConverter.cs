@@ -204,6 +204,8 @@ namespace VirtoCommerce.LiquidThemeEngine.Converters
             return new Fulfillment
             {
                 Name = fulfillment.Name,
+                Title = "Fulfillment Centers",
+                Url = "/fulfillments",
                 Address = ToLiquidAddress(fulfillment.Address)
             };
         }

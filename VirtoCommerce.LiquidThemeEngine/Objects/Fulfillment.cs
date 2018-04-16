@@ -32,5 +32,15 @@ namespace VirtoCommerce.LiquidThemeEngine.Objects
         [DataMember]
         public Address Address { get; set; }
 
+        /// <summary>
+        /// Returns the title of the blog.
+        /// </summary>
+        public string Title { get; set; }
+
+        /// <summary>
+        /// Returns the relative URL of the blog.
+        /// </summary>
+        public string Url { get; set; }
+
     }
 }
