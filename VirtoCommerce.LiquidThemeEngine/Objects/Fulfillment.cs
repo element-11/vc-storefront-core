@@ -24,5 +24,7 @@ namespace VirtoCommerce.LiquidThemeEngine.Objects
         /// Returns the URL for a tracking number.
         /// </summary>
         public string TrackingUrl { get; set; }
+
+        public string Name { get; set; }
     }
 }

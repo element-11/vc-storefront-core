@@ -234,6 +234,8 @@ namespace VirtoCommerce.Storefront.Model
         /// </summary>
         public UserRegistration UserRegistration { get; set; }
 
+        public Inventory.FulfillmentCenter FulfillmentCenter { get; set; }
+
         /// <summary>
         /// Represents user login data required to bind entered user data in the login form
         /// </summary>

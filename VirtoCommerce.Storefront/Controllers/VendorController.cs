@@ -57,5 +57,24 @@ namespace VirtoCommerce.Storefront.Controllers
 
             return NotFound();
         }
+
+        [HttpGet]
+        public async Task<ActionResult> FulfillmentDetails(string fulfillmentId)
+        {
+            var result = new VirtoCommerce.Storefront.Model.Inventory.FulfillmentCenter
+            {
+                Name = "Branch",
+                Address = new Address
+                {
+                    Name = "Name",
+                    Organization = "Org",
+                    Zip = "77777",
+                    PostalCode = "8888888"
+                }
+            };
+            WorkContext.FulfillmentCenter = result;
+
+            return View("fulfillment-center", WorkContext);
+        }
     }
 }

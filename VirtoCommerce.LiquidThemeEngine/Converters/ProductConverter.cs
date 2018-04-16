@@ -198,5 +198,13 @@ namespace VirtoCommerce.LiquidThemeEngine.Converters
 
             return result;
         }
+
+        public virtual Fulfillment ToLiquidFulfillment(VirtoCommerce.Storefront.Model.Inventory.FulfillmentCenter fulfillment)
+        {
+            return new Fulfillment
+            {
+                Name = fulfillment.Name
+            };
+        }
     }
 }

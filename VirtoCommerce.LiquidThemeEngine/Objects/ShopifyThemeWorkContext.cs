@@ -150,6 +150,8 @@ namespace VirtoCommerce.LiquidThemeEngine.Objects
 
         public MetafieldsCollection ApplicationSettings { get; set; }
 
+        public Fulfillment Fulfillment { get; set; }
+
         #endregion
 
         #region ILiquidizable members
