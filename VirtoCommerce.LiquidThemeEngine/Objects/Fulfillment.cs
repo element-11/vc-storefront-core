@@ -1,4 +1,5 @@
-﻿using DotLiquid;
+﻿using System.Runtime.Serialization;
+using DotLiquid;
 
 namespace VirtoCommerce.LiquidThemeEngine.Objects
 {
@@ -25,6 +26,11 @@ namespace VirtoCommerce.LiquidThemeEngine.Objects
         /// </summary>
         public string TrackingUrl { get; set; }
 
+        [DataMember]
         public string Name { get; set; }
+
+        [DataMember]
+        public Address Address { get; set; }
+
     }
 }

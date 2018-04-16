@@ -69,7 +69,14 @@ namespace VirtoCommerce.Storefront.Controllers
                     Name = "Name",
                     Organization = "Org",
                     Zip = "77777",
-                    PostalCode = "8888888"
+                    PostalCode = "8888888",
+                    City = "New York",
+                    CountryCode = "USA",
+                    CountryName = "USA",
+                    Phone = "1-800-777-7777",
+                    Line1 = "123 Street",
+                    RegionId = "NY",
+                    RegionName = "NY"
                 }
             };
             WorkContext.FulfillmentCenter = result;

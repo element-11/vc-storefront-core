@@ -203,7 +203,8 @@ namespace VirtoCommerce.LiquidThemeEngine.Converters
         {
             return new Fulfillment
             {
-                Name = fulfillment.Name
+                Name = fulfillment.Name,
+                Address = ToLiquidAddress(fulfillment.Address)
             };
         }
     }

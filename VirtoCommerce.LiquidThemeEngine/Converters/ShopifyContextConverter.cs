@@ -237,7 +237,11 @@ namespace VirtoCommerce.LiquidThemeEngine.Converters
                 }).ToArray();
             }
 
-            result.Fulfillment = ToLiquidFulfillment(workContext.FulfillmentCenter);
+            if (workContext.FulfillmentCenter != null)
+            {
+                result.Fulfillment = ToLiquidFulfillment(workContext.FulfillmentCenter);
+            }
+            
 
             return result;
         }
